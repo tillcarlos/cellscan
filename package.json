@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "@hotwired/stimulus": "^3.2.1",
+    "@hotwired/turbo-rails": "^7.3.0",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/typography": "^0.5.9",
+    "esbuild": "^0.17.14",
+    "stimulus-use": "^0.52.0",
+    "tailwindcss": "^3.3.0"
+  },
+  "scripts": {
+    "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds --public-path=assets",
+    "build:css": "tailwindcss -c ./config/tailwind.config.js -i ./app/assets/stylesheets/cell_scan/application.tailwind.css -o ./app/assets/builds/cell_scan/tailwind.css --watch"
+  }
+}

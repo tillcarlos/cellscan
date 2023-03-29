@@ -1,0 +1,12 @@
+
+p.foo {
+    text-decoration: dashed;
+}
+
+.translation_missing {
+    color: red;
+}
+.translation_missing::before {
+    content: "⚠️";
+    color: red;
+}

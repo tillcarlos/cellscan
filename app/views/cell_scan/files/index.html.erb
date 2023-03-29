@@ -1,0 +1,40 @@
+<% if @rows %>
+  <div class="overflow-x-auto">
+    <table class="min-w-full table-auto">
+      <thead>
+        <tr class="bg-gray-800 text-white">
+          <% @headers.each do |header| %>
+            <th class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">
+              <%= header %>
+            </th>
+          <% end %>
+        </tr>
+      </thead>
+      <tbody class="bg-white divide-y divide-gray-200">
+        <% @rows.each_with_index do |row, index| %>
+          <tr class="<%= index.odd? ? 'bg-gray-50' : 'bg-white' %>">
+            <% row.each do |field| %>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                <%= field %>
+              </td>
+            <% end %>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="my-6">
+    <%== pagy_nav(@pagy) %>
+  </div>
+<% else %>
+    Could not read file <b><%= @path %></b>
+    <hr />
+    I'm mounted under <%= Rails.root %>
+
+    <% if @error %>
+      <hr />
+      <pre><%= @error %></pre>
+    <% end %>
+
+<% end %>
