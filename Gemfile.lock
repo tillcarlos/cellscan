@@ -1,9 +1,10 @@
 PATH
   remote: .
   specs:
-    cell_scan (0.1.0)
+    cellscan (0.1.0)
       pagy
       rails (>= 7.0.4)
+      rubyzip
       stimulus-rails
       tailwindcss-rails (~> 2.0)
 
@@ -173,6 +174,7 @@ GEM
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 1.7)
     ruby-progressbar (1.13.0)
+    rubyzip (2.3.2)
     sqlite3 (1.6.2-arm64-darwin)
     stimulus-rails (1.2.1)
       railties (>= 6.0.0)
@@ -192,7 +194,7 @@ PLATFORMS
   arm64-darwin-21
 
 DEPENDENCIES
-  cell_scan!
+  cellscan!
   propshaft
   rspec (~> 3.9)
   rubocop (= 0.79.0)

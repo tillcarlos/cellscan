@@ -1,4 +1,4 @@
 # desc "Explaining what the task does"
-# task :cell_scan do
+# task :cellscan do
 #   # Task goes here
 # end

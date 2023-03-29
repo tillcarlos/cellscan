@@ -1,6 +1,6 @@
 require 'pagy/extras/array'
 
-module CellScan
+module Cellscan
   class FilesController < ApplicationController
     include Pagy::Backend
     
@@ -10,7 +10,7 @@ module CellScan
       @error = nil
       if @path.present?
         begin
-          @headers, data = CellScan.file_loader.call(@path)
+          @headers, data = Cellscan.file_loader.call(@path)
           @pagy, @rows = pagy_array(data)
         rescue => e 
           @error = e.message

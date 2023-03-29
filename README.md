@@ -1,4 +1,4 @@
-# CellScan
+# Cellscan
 A rails engine to view CSV files in a table.
 
 ## Usage
@@ -8,7 +8,7 @@ How to use my plugin.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem "cell_scan"
+gem "cellscan"
 ```
 
 And then execute:
@@ -18,7 +18,7 @@ $ bundle
 
 Or install it yourself as:
 ```bash
-$ gem install cell_scan
+$ gem install cellscan
 ```
 
 ## Contributing

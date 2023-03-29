@@ -1,5 +1,5 @@
-module CellScan
+module Cellscan
   class ApplicationController < ActionController::Base
-    layout 'cell_scan/application'
+    layout 'cellscan/application'
   end
 end

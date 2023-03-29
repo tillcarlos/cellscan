@@ -1,4 +1,4 @@
-module CellScan
+module Cellscan
   module ApplicationHelper
     include Pagy::Frontend
   end

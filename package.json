@@ -11,6 +11,6 @@
   },
   "scripts": {
     "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds --public-path=assets",
-    "build:css": "tailwindcss -c ./config/tailwind.config.js -i ./app/assets/stylesheets/cell_scan/application.tailwind.css -o ./app/assets/builds/cell_scan/tailwind.css --watch"
+    "build:css": "tailwindcss -c ./config/tailwind.config.js -i ./app/assets/stylesheets/cellscan/application.tailwind.css -o ./app/assets/builds/cellscan/tailwind.css --watch"
   }
 }

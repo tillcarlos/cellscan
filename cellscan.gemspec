@@ -1,8 +1,8 @@
-require_relative "lib/cell_scan/version"
+require_relative "lib/cellscan/version"
 
 Gem::Specification.new do |spec|
-  spec.name        = "cell_scan"
-  spec.version     = CellScan::VERSION
+  spec.name        = "cellscan"
+  spec.version     = Cellscan::VERSION
   spec.authors     = ["Till Carlos"]
   spec.email       = ["till@tillcarlos.com"]
   spec.homepage    = "https://tillcarlos.com/cellscan"
