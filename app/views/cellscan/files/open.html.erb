@@ -12,7 +12,9 @@
       </thead>
       <tbody class="bg-white divide-y divide-gray-200">
         <% @rows.each_with_index do |row, index| %>
-          <tr class="<%= index.odd? ? 'bg-gray-50' : 'bg-white' %>">
+          <% bg = index.odd? ? 'bg-gray-50' : 'bg-white' %>
+          <% bg = 'bg-yellow-100' if row.first == @highlight %>
+          <tr class="<%= bg %>">
             <% row.each do |field| %>
               <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                 <%= field %>
